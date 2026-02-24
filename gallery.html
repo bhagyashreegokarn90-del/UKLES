@@ -34,28 +34,42 @@
   box-sizing: border-box;
 }
 
-.flex-container {
+   div.gallery {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
-.flex-item {
-  background-color: #1c1c1c;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  width: 70%;
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
 }
-        @media (max-width: 600px) {
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+ @media (max-width: 600px) {
         .flex-container {
             flex-direction: column;
         }
         }
-
-     </style>
+        
+</style>
 </head>
 <body>
-    <div class="w3-top w3-hide-small"></div>
+     <div class="w3-top w3-hide-small"></div>
     <nav>
         <div class="w3-bar w3-xlarge w3-red w3-opacity w3-hover-opacity-off" id="myNavbar">
             <a href="index.html" class="w3-bar-item w3-button">ಮುಖಪುಟ</a>
@@ -63,71 +77,115 @@
     </nav>
 
     <div class="w3-container w3-teal w3-display-center">  
-        <h1><b><center>ಚಿತ್ರ ಗ್ಯಾಲರಿ</center></b></h1>
-      <h4><center>ಉತ್ತರ ಕರ್ನಾಟಕ ಸಂಘ ಹುಬ್ಬಳ್ಳಿ ಧಾರವಾಡ.
+
+    <h1>ಚಿತ್ರ ಗ್ಯಾಲರಿ</h1>h1>
+
+<h2>ಉತ್ತರ ಕರ್ನಾಟಕ ಸಂಘ ಹುಬ್ಬಳ್ಳಿ ಧಾರವಾಡ.
 ಪ್ರಸ್ತುತ ಸಾಲಿನ ಪದಾಧಿಕಾರಿ, ಕಾರ್ಯಕಾರಿ ಸದಸ್ಯರು
 
- ಭಾವಚಿತ್ರಗಳು</center></h4>  
+ ಭಾವಚಿತ್ರಗಳ</h2>
+         </div>
+
+<div class="gallery">
+
+    <h3><center><b>ಪದಾಧಿಕಾರಿಗಳು</b></center></h3>
+
+<div class="gallery-item">
+  <a target="_blank" href="amma.jpeg">
+    <img src="amma.jpeg" alt="ರೂಪಾ ಜೋಶಿ , ಅಧ್ಯಕ್ಷರು " width="600" height="400">
+  </a>
+    
+  <div class="desc">ರೂಪಾ ಜೋಶಿ , ಅಧ್ಯಕ್ಷರು</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="vinuta.jpeg">
+    <img src="vinuta.jpeg" alt="ವಿನುತಾ ಹಂಚಿನಮನಿ, ಉಪಾಧ್ಯಕ್ಷರು" width="600" height="400">
+  </a>
+  <div class="desc">ವಿನುತಾ ಹಂಚಿನಮನಿ, ಉಪಾಧ್ಯಕ್ಷರು</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="nirmalashettar.jpeg">
+    <img src="nirmalashettar.jpeg" alt="ನಿರ್ಮಲಾ ಶೆಟ್ಟರ್, ಕಾರ್ಯದರ್ಶಿಗಳು" width="600" height="400">
+  </a>
+  <div class="desc">ನಿರ್ಮಲಾ ಶೆಟ್ಟರ್, ಕಾರ್ಯದರ್ಶಿಗಳು</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="suma.jpeg">
+    <img src="suma.jpeg" alt="ಸುಮಾ ಹಡಪದ, ಸಹಕಾರ್ಯದರ್ಶಿಗಳು" width="600" height="400">
+  </a>
+  <div class="desc">ಸುಮಾ ಹಡಪದ, ಸಹಕಾರ್ಯದರ್ಶಿಗಳು</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="megha.jpeg">
+    <img src="megha.jpeg" alt="ಮೇಘಾ ಹುಕ್ಕೇರಿ, ಕೋಶಾಧ್ಯಕ್ಷರು" width="600" height="400">
+  </a>
+  <div class="desc">ಮೇಘಾ ಹುಕ್ಕೇರಿ, ಕೋಶಾಧ್ಯಕ್ಷರು</div>
+</div>
+</div>
+
+
+ <div class="w3-container w3-teal w3-display-center">  
+
+<div class="gallery">
+    <h3><center><b>ಕಾರ್ಯಕಾರಿ ಸದಸ್ಯರು </center></h3>
+
+    
+
+<div class="gallery-item">
+  <a target="_blank" href="usha.jpeg"">
+    <img src="usha.jpeg" alt="ಡಾ ಉಷಾ ಗದ್ದಗಿಮಠ " width="600" height="400">
+  </a>
+    
+  <div class="desc">ಡಾ ಉಷಾ ಗದ್ದಗಿಮಠ </div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="pushpa.jpeg">
+    <img src="pushpa.jpeg" alt="ಪುಷ್ಪಾ ಹಾಲಭಾವಿ" width="600" height="400">
+  </a>
+  <div class="desc">ಪುಷ್ಪಾ ಹಾಲಭಾವಿ</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="sulochana.jpeg">
+    <img src="sulochana.jpeg" alt="ಶ್ರೀಮತಿ ಸುಲೋಚನಾ ಮಾಲಿಪಾಟೀಲ" width="600" height="400">
+  </a>
+  <div class="desc">ಶ್ರೀಮತಿ ಸುಲೋಚನಾ ಮಾಲಿಪಾಟೀಲ</div>
+</div>
+
+    <div class="gallery-item">
+  <a target="_blank" href="malathi.jpeg">
+    <img src="malathi.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">ಮಾಲತಿ ಹೆಗಡೆ </div>
+</div>
+
+   
+    <div class="gallery-item">
+  <a target="_blank" href=""lalitha.jpeg">
+    <img src=""lalitha.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc"> ಲಲಿತಾ ಪಾಟೀಲ್</div>
+</div>
+  </style>
+</head>
+</body>
+   
         
-    </div>
+        
 
-    <div class="w3-container w3-teal w3-display-center">
-    <div class="gallery">
 
-        <h5><center><b>ಪದಾಧಿಕಾರಿಗಳು</b></center></h5>
-
-      <div class="flex-container">
 
                
           
-  <div class="flex-item"><img src="amma.jpeg" alt="ಚಿತ್ರ 1">ರೂಪಾ ಜೋಶಿ , ಅಧ್ಯಕ್ಷರು</div> <br>
-                              
-  <div class="flex-item"><img src="vinuta.jpeg" alt="ಚಿತ್ರ 2">ವಿನುತಾ ಹಂಚಿನಮನಿ, ಉಪಾಧ್ಯಕ್ಷರು</div> <br>
-                              
-  <div class="flex-item"><img src="nirmalashettar.jpeg" alt="ಚಿತ್ರ 3"; width:50%>ನಿರ್ಮಲಾ ಶೆಟ್ಟರ್, ಕಾರ್ಯದರ್ಶಿಗಳು</div>
-  
-  <div class="flex-item"><img src="suma.jpeg" alt="ಚಿತ್ರ 4">ಸುಮಾ ಹಡಪದ, ಸಹಕಾರ್ಯದರ್ಶಿಗಳು</div>
-                               
-  <div class="flex-item"><img src="megha.jpeg" alt="ಚಿತ್ರ 5">ಮೇಘಾ ಹುಕ್ಕೇರಿ, ಕೋಶಾಧ್ಯಕ್ಷರು</div>
-                             
-      </div>
-    </div>
-        
-<div class="w3-container w3-teal w3-display-center">
-    <div class="gallery">
-
-         <h5><center><b>ಕಾರ್ಯಕಾರಿ ಸದಸ್ಯರು </center></h5>
-         <div class="flex-container">
-
-       <div class="flex-item"><img src="usha.jpeg" alt="ಚಿತ್ರ 1">ಡಾ ಉಷಾ ಗದ್ದಗಿಮಠ </div> 
-                              
-  <div class="flex-item"><img src="pushpa.jpeg" alt="ಚಿತ್ರ 2">ಪುಷ್ಪಾ ಹಾಲಭಾವಿ </div>
-                              
-  <div class="flex-item"><img src="sulochana.jpeg" alt="ಚಿತ್ರ 3">ಶ್ರೀಮತಿ ಸುಲೋಚನಾ ಮಾಲಿಪಾಟೀಲ </div> 
-  
-  <div class="flex-item"><img src="malathi.jpeg" alt="ಚಿತ್ರ 4">ಮಾಲತಿ ಹೆಗಡೆ </div>
-                               
-  <div class="flex-item"><img src="lalitha.jpeg" alt="ಚಿತ್ರ 6">ಲಲಿತಾ ಪಾಟೀಲ್</div>   
+   
              
-<div class="flex-item"><img src="sudha.jpeg" alt="ಚಿತ್ರ 7">ಡಾ//ಸುಧಾ.ಚ.ಹುಲಗೂರ</div> 
-
-<div class="flex-item"><img src="parvati.jpeg" alt="ಚಿತ್ರ 8">ಪಾರ್ವತಿ ಹಾಲಭಾವಿ</div> 
-
-<div class="flex-item"><img src="saroja.jpeg" alt="ಚಿತ್ರ 9">ಡಾ. ಸರೋಜಾ ಮೇಟಿ</div> 
-
-     <div class="flex-item"><img src="sharada.jpeg" alt="ಚಿತ್ರ 10">ಡಾ. ವಿ ಶಾರದಾ</div> 
-
-    <div class="flex-item"><img src="aruna.jpeg" alt="ಚಿತ್ರ 11">ಡಾ. ಅರುಣಾ ಹಳ್ಳಿಕೇರಿ</div> 
-
-     <div class="flex-item"><img src="nanda.jpeg" alt="ಚಿತ್ರ 12">ನಂದಾ ಕುಲಕರ್ಣಿ</div> 
-
-    <div class="flex-item"><img src="suma.jpeg" alt="ಚಿತ್ರ 13">ಸುಮಾ ರಾಜಕುಮಾರ</div> 
 
 
-  </div>        
 
-    </div>
-               
-    </div>
-</body>
-</html>
+ 
+
